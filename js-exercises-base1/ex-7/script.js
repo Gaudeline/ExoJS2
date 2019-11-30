@@ -2,19 +2,20 @@ document.getElementById("valider").addEventListener("click", () => {
     let point = document.getElementById("pointure").value;
     let year = document.getElementById("annee").value;
     
-    function resultat(point, year) {
-      return ((((point * 2) + 5) * 50) - year) + 1766;
+    function resultat() {
+      mult = point * 2;
+      ajout = mult + 5;
+      remult = ajout * 50;
+      sous = remult - year;
+      result = sous + 1766;
     }
     alert (resultat);
 
 });
-// function carré(nombre) {
-//     return nombre * nombre;
-//   }
-
-
-
-
+// largeur=prompt("Largeur du rectangle?");
+// longueur=prompt("Longueur du rectangle?");
+// surface=largeur * longueur;
+// alert("La surface est de : " + surface);
 // Multiplier la pointure par 2
 // Ajouter 5 au résultat
 // Multiplier le tout par 50
