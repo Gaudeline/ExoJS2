@@ -1,15 +1,21 @@
-let a = "3";
-let b = "2";
-function triple(){
-    x = x * 3;
+let a = 3;
+let b = 2;
+function triple(X){
+    // x = x * 3;
+    return x*3;
 }
-function affiche(){
-    resulta =
-    resultb =
-    alert(resulta);
-    alert(resultb);
-}
+
 document.getElementById("affiche").addEventListener("click", () => {
+    function affiche(){
+        // resulta =
+        // resultb =
+        // alert(resulta);
+        // alert(resultb);
+        let check = a*3;
+        let test = b*3;
+        alert(check);
+        alert(test);
+    }
     affiche();
 });
 
