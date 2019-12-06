@@ -8,21 +8,21 @@ document.getElementById("push").addEventListener("click", () => {
                 
                 break;
             case "2":
-                alert (temp * 9/5 + 32 + " °F");
+                alert ((temp * 9/5) + 32 + " °F");
                 break;
             case "3":
                 alert (temp + 273,15 + " K");
                 break;
             default:
-                alert (temp - 32 / 9/5 + " °C");
+                alert ((temp - 32) / (9/5) + " °C");
             case "4":
-                alert (temp - 32 * 5/9 + 273,15 + " K");
+                alert ((temp - 32) * (5/9) + 273,15 + " K");
                 break;
             case "5":
                 alert (temp - 273,15 + " °C");
                 break;
             case "6" :
-                alert (temp * 9/5 - 459,67 + " °F");
+                alert ((temp * 9/5) - 459,67 + " °F");
                 break;
         }
     }
