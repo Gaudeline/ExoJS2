@@ -11,12 +11,12 @@ document.getElementById("push").addEventListener("click", () => {
                 alert (temp * 9/5 + 32 + " °F");
                 break;
             case "3":
-                alert (temp + 273,15 + "K");
+                alert (temp + 273,15 + " K");
                 break;
             default:
-                alert (temp - 32 / 9/5 + "°C");
+                alert (temp - 32 / 9/5 + " °C");
             case "4":
-                alert (temp -32 * 5/9 + 273,15 + "K");
+                alert (temp - 32 * 5/9 + 273,15 + " K");
                 break;
             case "5":
                 alert (temp - 273,15 + " °C");
