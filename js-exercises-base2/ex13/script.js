@@ -5,27 +5,27 @@ document.getElementById("run").addEventListener("click", () => {
         let taille = prompt("Quel est votre taille ?");
         let imc = (poids / (taille *taille));
         let imcRound = (Math.round(imc * 100) / 100);
-        if(imcRound < 16,5){
+        if(imcRound > 40){
             console.log(imcRound);
-            alert("Votre IMC est de : " + imcRound + " : Vous êtes en état de dénutrition ou famine");
+            alert("Votre IMC est de : " + imcRound + " : Vous êtes en obésité morbide");
         }
-        else if (imcRound >= 16,5 && imcRound < 18,5){
-            alert ("Votre imc est de : " +imcRound + " : Vous êtes en état de maigreur");
-        }
-        else if (imcRound >= 18,5 && imcRound < 25){
-            alert ("Votre imc est de : " +imcRound + " : Vous êtes en corpulence normale");
-        }
-        else if (imcRound >= 25 && imcRound < 30){
-            alert ("Votre imc est de : " +imcRound + " : Vous êtes en surpoids");
+        else if (imcRound >= 35 && imcRound < 40){
+            alert ("Votre imc est de : " +imcRound + " : Vous êtes en Vous êtes en obésité sévère");
         }
         else if (imcRound >= 30 && imcRound < 35){
             alert ("Votre imc est de : " +imcRound + " : Vous êtes en obésité modérée");
         }
-        else if (imcRound >= 35 && imcRound < 40){
-            alert ("Votre imc est de : " +imcRound + " : Vous êtes en obésité sévère");
+        else if (imcRound >= 25 && imcRound < 30){
+            alert ("Votre imc est de : " +imcRound + " : Vous êtes en surpoids");
+        }
+        else if (imcRound >= 18.5 && imcRound < 25){
+            alert ("Votre imc est de : " +imcRound + " : Vous êtes de corpulence normale");
+        }
+        else if (imcRound >= 16.5 && imcRound < 18.5){
+            alert ("Votre imc est de : " +imcRound + " : Vous êtes en état de maigreur");
         }
         else{
-            alert ("Votre imc est de : " +imcRound + " : Vous êtes en obésité morbide");
+            alert ("Votre imc est de : " +imcRound + " : Vous êtes en état de dénutrition ou de famine");
         }
     }
     calculIMC();
